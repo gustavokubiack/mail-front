@@ -32,6 +32,8 @@ jobs:
           tags: |
             gustavokubiack/mail-front:latest
             gustavokubiack/mail-front:${{ github.sha }}
+          build-args: |
+            VITE_API_URL=${{ secrets.VITE_API_URL }}
 
       - name: Clone infra repository
         run: |
