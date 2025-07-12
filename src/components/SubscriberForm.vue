@@ -6,7 +6,7 @@
       <v-avatar size="64" class="mb-6 mail-icon-bg">
         <v-icon size="32" color="white">mdi-email-outline</v-icon>
       </v-avatar>
-      <h1 class="text-h5 font-weight-bold mb-2 text-white">Envie seu Email</h1>
+      <h1 class="text-h5 font-weight-bold mb-2 text-white">Envie seu e-mail</h1>
       <p class="text-body-2 text-blue-lighten-4 mb-0">Conecte-se conosco de forma rápida e segura</p>
     </div>
 
@@ -25,7 +25,7 @@
 
         <v-text-field
           v-model="form.email"
-          label="Endereço de Email"
+          label="Endereço de e-mail"
           placeholder="seu@email.com"
           prepend-inner-icon="mdi-at"
           variant="outlined"
@@ -44,7 +44,7 @@
           :loading="isSubmitting"
         >
           <v-icon start>mdi-send</v-icon>
-          {{ isSubmitting ? 'Enviando...' : 'Enviar Email' }}
+          {{ isSubmitting ? 'Enviando...' : 'Enviar e-mail' }}
         </v-btn>
       </v-form>
     </v-card-text>
@@ -84,13 +84,13 @@ const handleSubmit = async () => {
 
     if (!res.ok) throw new Error('Erro ao enviar')
 
-    emit('success', 'Email enviado com sucesso!')
+    emit('success', 'E-mail enviado com sucesso!')
     form.name = ''
     form.email = ''
     formRef.value.reset()
   } catch (error) {
     console.error(error)
-    emit('error', 'Erro ao enviar email. Tente novamente.')
+    emit('error', 'Erro ao enviar e-mail. Tente novamente.')
   } finally {
     isSubmitting.value = false
   }
