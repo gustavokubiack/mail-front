@@ -98,7 +98,6 @@ const handleSubmit = async () => {
 </script>
 
 <style scoped>
-/* Inclui os estilos decorativos do cabeçalho */
 .header-gradient {
   background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
   position: relative;
