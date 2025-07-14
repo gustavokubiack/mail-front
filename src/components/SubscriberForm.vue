@@ -6,7 +6,7 @@
       <v-avatar size="64" class="mb-6 mail-icon-bg">
         <v-icon size="32" color="white">mdi-email-outline</v-icon>
       </v-avatar>
-      <h1 class="text-h5 font-weight-bold mb-2 text-white">Envie seu E-mail</h1>
+      <h1 class="text-h5 font-weight-bold mb-2 text-white">Envie seu E-mail :)</h1>
       <p class="text-body-2 text-blue-lighten-4 mb-0">Conecte-se conosco de forma rápida e segura</p>
     </div>
 
